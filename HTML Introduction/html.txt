@@ -1,0 +1,142 @@
+HTML 
+Hypertext Markup Language. It is a standard markup language that's used to create web pages
+that are displayed in browsers.
+
+HTML webpages are written in the form of HTML elements. HTML can be made more interactive and 
+attractive by using Cascading Style Sheet (CSS) and JavaScript (JS) within it. 
+
+HTML tags are keywords on a web page that define how the web browser should format and display
+ the page. Almost all tags have two parts, an opening tag and a closing tag. For example,
+  <html> is the opening tag and </html> is the closing tag
+
+  The first publicly available description of HTML was a document called "HTML Tags", 
+  first mentioned on the Internet by Tim Berners-Lee in late 1991. 
+
+
+
+  We start bulding a website by creating a file named index.html ,index.html is a 
+  specific filename which is presented when the website root address is typed.
+
+  A basic html page
+
+    <! Doctype html>  ---> specific this is an html document
+    <html> ---> root of an HTML page
+    <head> ---> Contain page metadata
+    <title> Kamalesh website </title> -->Contains title
+    </head>
+    <body> --->The main page of the page 
+    <h1> This is a heading </h1> ---> heading tag
+    <p> This is Paragraph</p>
+    </body>
+    </html>
+
+
+A tag is like a container for either content or other HTML tags
+
+
+    HTML  ====>  browser ====> Rendered page
+
+
+HTML Attributes 
+    Use to add more information corresponding to an HTML tag.
+
+        Example: <a href = "https://youtube.com"</a>
+        We can either use single of double quotes in attributes 
+
+
+The Heading Tags
+    Heading tag is used to mark heading in html. From h1 to h6, we have tags for the most 
+    impotant to the least important Heading
+
+
+        <h1> Most important heading</h1>
+        <h2> Another heading h2   </h2>
+        <h3> Another heading</h3>
+        <h4> Another heading</h4>
+        <h5> Another heading</h5>
+        <h6> Another heading</h6>
+
+        Note : We should not use HTML heading to make text thick or bold
+
+
+The Paragraph Tag 
+    Paragraph tages are used to add paragraph to an html page.
+
+        <p> This is a paragraph</p>
+
+The Anchor Tag
+     The Anchor tag is used to add linked to an existing content inside an html page.
+     < a href = "google.com" > chick here</a>
+
+ The image Tag    
+    img tag is used to add images in an html page
+        <img src = "image.jpg" alt="tree image"> --->relative url of an image .."alt" is, if the image is not reloaded than sent the message to the user
+
+
+Bolt Itaic Underline tags 
+    We can use bolt, italic and underline tags to highlight the text as follows:
+
+        <b> This is bolt</b>
+        <i> This is italic</i>
+        <u>This is underline</u>
+
+br tag 
+    The br tag is used to create line breaks in an HTML document.
+
+big and small tages
+We can make the text a bit larger and a bit smaller using big and small respectively.
+
+hr tag
+    <hr> tag in HTML is used to create a horizontal ruler often used to separate the content.
+
+
+Subscript & superscript 
+    We can add subscriot in HTML as follows:
+
+        CO<sub> 2 </sub> is Subscript
+        ax<sup>2</sup> is superscript
+
+pre tag
+    HTML always ignore extra space newlines. In order to display a piece of text as is, we use pre tag 
+
+        <pre>
+            This is v  written
+             using pre          --->
+             tag
+            </pre>
+
+Creating a page layout
+
+    When we use the right tag in right place, it results in a better page layout, better indexing by 
+    search engines.We use the following tag get the job done 
+
+    <header>   -->contains nav tag
+    <main>       Website layout
+    <footer>
+
+Inside the main tag we insert the following tags:
+
+    <main>  ---> This main opening tag
+    <section> ---> a page section
+    <article> ---> a self contained content
+    <aside> ---> content aside from the content(eg Ads etc)
+    </main> ---> The main closing tag
+
+Link attributes
+<a href = "/open"> Open </a> --> open page opened in same tab
+<a href = "/open" target="_blank"> open </a> -->open in a new tag
+
+We can put any content inside an anchor tag (image, heading etc are all allowed)
+
+
+We can add links to image like this
+
+    <a href = "/about"> <image src='image.jpg' widht= "120"> </a>  -->Height will be set automatically
+
+
+The div tag
+    div tag is used as a container for other elements div is a block level element.
+                        <<always takes full widht>>
+                    
+
+
