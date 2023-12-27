@@ -140,3 +140,116 @@ The div tag
                     
 
 
+The span tag
+    span is an inline container. --> Takes as much width as necessary
+
+
+<!-- Block Elements -->
+<!--
+    <address> <article> <aside> <blockquote> <canva> <dd> <div> <dl> <dt> <fieldset> <figcaption>
+    <figure> <footer> <form> <h1>-<h6> <header> <hr> <li> <main> <nav> <noscript>
+    <ol> <p> <pre> <section> <table> <ul> <video> </video>
+
+<!-- Inline Elements -->
+    <a> <abbr> <acronym> <b> <bdo> <big> <br> <button> <cite> <code> <dfn>
+    <em> <i> <img> <input> <kbd> <lebel> <map> <object> <output> <q> <samp>
+    <script> <select> <small> <span> <strong> <sub> <sup> <textarea> <time>
+    <tt> <var> -->
+
+
+
+Lists, table & frams
+    List are used to display content which represents a list .
+
+Unorder list: used to list unorderd items
+
+        <ul>
+            <li> Home </li>
+            <li> About </li>
+                  ......
+        </ul>
+
+Ordered list: Used to list order items
+
+            <ol>
+                <li>Mobile</li>
+                <li>Laptop</li>
+                <li>Tab</li>
+            </ol>
+
+
+Table tag
+    The <table> tag is used to define table in html. It is used to format & display
+    tabular data.
+
+tr tag: Used to display table row
+td tag: Used to display table data
+
+th tag: Used to place of table data for displaying table headers
+
+    We can use define as many table rows as we want.
+
+    To add a caption to the table, we use <caption> tag iside table.
+
+
+thead tag: used to wrap table head(caption & tr with th)
+tbody tag: used to wrap the table body
+
+Colspan attributes 
+This attributes is used to create cells spanning multiple colums.
+<th Colspan="2"> Kamalesh</th>  -->span 3 colums
+
+HTML forms
+    An HTML form is used to collect input from the user form tag user 
+    for the same
+
+        <form>
+            .....
+        </form>
+    There are different form Elements for different kinds of user input.
+
+Input element: Can be of type text, checkbox, radio, button and submit.
+We also have a 'file' type
+
+textarea element: Define a multi line text input colums and rows attributes
+can be used to size the textarea.
+
+Select element : Define a drop down list
+
+Embedding Videos
+    Video tag is used to play video in HTML
+    <video src='video.mp4'> Error </video>
+
+Attributes for Video 
+    We can use: 
+     Widht: To adjust widht of a video (Height automatically adjusts)
+     
+     We can use autoplay/loop to autoplay or loop the video.
+
+
+
+SEO 
+
+We will focus only on HTML standard of SEO. We wil not be looking into 
+keyword bulding and content optimization aspect of SEO.
+
+Type of SEO 
+=> On page SEO ---> Can be done HTML developers
+=> Off page SEO
+
+HTML SEO
+    HTML developers can implement SEO using the following technique:
+
+    1. Set the title vary nice & to the point
+    2. Set the meta description
+        <meta name="description" content="...">
+    
+    3. Set a nice URL slug
+    4. set the meta keyword tag
+    5. Set the meta author tag
+        <meta name="author"content="Kamalesh">
+    6. Set a favicon
+    7. Compress images & other resourses
+    8. Remove unused HTML/CSS & js files + compress them
+    9. Add alt text to image
+    
