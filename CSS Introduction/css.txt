@@ -1,0 +1,495 @@
+CSS Tutorial for beginners
+
+Instruction to css
+
+HTML is just a skeletal layout of a website. We need css to design a website add style to it and make it look beautiful. 
+
+What is CSS?
+Css stands for cascading style sheets. Css is optional but it convert an off looking HTML page into a beautiful and & responsible website.
+
+Installing vs code
+We will use Microsoft Visual Studios Code as a tool to edit our code. It is very powerful, free and customizable.
+
+Why learn css?
+Css is a very demanded skill in the world of web development. If you are successfully like to master css, you can customize your website as per your liking.
+
+Your first line of css
+Create a css file inside your directory and add it to your HTML. Add the following line to your css body {
+
+Background- color: red;
+This will made your page background as red. 
+
+
+
+
+
+
+
+Chapter 1- creating our first css website
+
+We will create our first css website in this section.
+
+What is DOM?
+DOM stand for document object model when a page is loaded, the browser creates a DOM of the page which is constructed as a tree of objects.
+
+HTML ID and class attributes
+When an html element is given an id, it serves as a unique identifier for that element 
+On the other hand, when an html element is given a class, it now belongs to a single class but every element must have a unique id ( assigned).
+ We can add multiple classes to an element like this 
+<div id=”first” class=”c1 c2 c3”>
+</div>
+
+Three ways to add CSS to HTML
+1. <style > tag – adding <style>…</style> to html
+2. Inline css- adding css using style attribute
+3. External css- adding a stylesheet (.css) to html sing <link>tag
+
+Css  selectors
+A css selectors is used to select an html elements for styling
+Body (selector) {
+Color: red;    Declaration( properly : value)
+Background: pink; 
+Declaration
+
+
+Element selection
+It is used to select an element based off the tag name
+
+For example:
+H2 { color: blue;
+}
+
+Id selection 
+It is used to select an element with a given id 
+For example:
+#first {
+ Color: white;
+Background: black;
+
+Class selection 
+It is used to select an element with a given class
+For example:
+.red {background: red;}
+
+Important Notes:
+We can group select that like this :
+H1,h2.h3,div  {
+Color : blue;} (h1,h2,h3 and div will be blue
+We can use element class as a selection like this:
+
+P.red {
+       Color : red; ( all paragraph of class-red will get color of red
+*  Can be used as a universal selector to select all the elements
+
+
+* {
+   Margin : o ;
+Padding : 0 ;
+}
+An inline style will override external and internal styles
+
+Comments in css
+Comment in css is text which is not parse and is thus ignored
+Chapter 2- colors & Background
+CSS rules are simple key- value pairs with a selector. We can write css rule to change color and set backgrounds.
+
+The color property
+The css color property can be used to set the text color inside an element
+P {
+  Color : red; ( Text color will be changed to red )
+Similarly we can set color for different elements
+
+Types of color values
+Following are the most commonly used color value in css
+1. RGB- Specify color using Red, green, blue values eg.rgb( 200,98, 70 )
+2. HEX CODE- Specify color using hex code.
+                   eg. #ff7189
+3. HSL- Specify the color using hsl values (hsl full form-hue, saturation, lightness)
+    eg hsl (8%, 90%, 63% ).
+The value of the color or background color is provided as any one of these values.
+
+Note : We also have an RGBA and HSLA value for color but they are rarely used by beginners a stands for alpha. 
+The background color property
+The css background color property specifies the background color of a container.
+For eg :
+                 Brown {
+                         Background-color : brown ; ( can be other types of color as well )
+
+
+The background-image property
+Used to set an image as the background.
+Body {
+     Background-image : url ( “kisan.jpg”)
+The image is by default repeated in X & Y direction
+
+The background-repeat property 
+Can be any of :
+Repeat-X = repeat in horizontal direction 
+Repeat –Y = repeat in vertical direction 
+No-repeat = image not repeat
+See more possible value at MDN docs
+
+The background size property 
+Can be following :
+Cover – fits & no empty space remains
+Contain – fits & image is fully visible
+Auto – display in original size
+{{ width}} – set width & height will be set automatically 
+{{ width}} {{ height }} – set width & height 
+
+Note: Always check the MDN docs to dissect a given css property. Remember, practice will make you perfect.
+The background-position property
+ Sets the starting position of a background image.
+.div {
+     Background- position: left top;
+}
+
+The background attachment property 
+Defines a scrollable/non scrollable character of a background image.
+.div {
+   Background-attachment: fixed; (Always check MDN docs)
+        }
+ The background shorthand property
+ A single property to set multiple background properties 
+.div 3 {    
+      Background: red[color] url( img.png) no-repeat fixed[attachment] right top[position];
+*One of the property can be missing given the others are in order.
+
+
+
+
+
+
+
+
+
+
+ 
+Chapter 3 – CSS Box Model
+ The css box model looks at all the HTML element as boxes
+
+
+Setting width and height
+We can set width and height in css as follows 
+#box {
+   Height  : 70 px;
+   Width : 70 px;
+        }
+
+Note that the total width/height is calculated as follows:
+Total height = height + top/bottom padding + top/bottom border + top/bottom margin
+
+Setting margin & padding
+ We can set margin and padding as follows:
+.box {
+       Margin  : 3px;
+      Padding : 4px;
+    }
+.box main {
+               Margin : 7px(top) 0px(right) 2px(bottom) 11px(left)
+                   }
+.box last {
+        Margin : 7px(top&bottom) 3px(left&right);
+We can also set individual margins/paddings like this:
+ Margin-top : 7 px;
+Margin-bottom : 3px;
+Margin-left : 8px;  
+Margin-right : 9px;
+Note: Same goes with padding
+
+Setting borders
+We can set the border as follows
+.bx {
+     Border-width : 2px;
+Border-style : solid;
+Border-color : red;
+
+Note : or just set border : 2px solid red; (shorthand)
+  }
+
+Border radius
+We can set border radius to create rounded borders
+.div 2 {
+    Border-radius : 7px;
+
+Margin collapse
+When two margins from different element overlap, the equivalent margin is the greater of the two. This is called margin collapse
+     
+
+
+
+Box sizing
+Determines what out of padding and border is included in element width and height
+Can be content-box or border-box
+.div 1 {
+Box-sizing : border-box;( The content width and height includes content + padding + border)
+
+
+Chapter 4­ – font & display
+
+The display property
+ The css display property is used to determine whether an element is created as a block/inline element & the layout used for its chindren.(flexbox/grid/etc)
+ 
+Display: inline
+Takes only the space required by the element. No line creates before and after. Setting width/height or margin/padding not allowed.
+Display: block
+Takes full space available in width and leaves a newline before and after the element 
+Display: inline-block
+Similar to inline but setting  height, width, margin and padding is allowed. Element can sit next to each other
+Display : none vs visibility : hidden
+With display : none, the element is remove from the document flow. Its space is not blocked.
+With visibility : hidden, the element is hidden but its space is reserved.
+Text – align property 
+Used to sit the horizontal alignment of a text 
+    .div 1 {
+         Text –align : center;
+          }
+ Text decoration property 
+Used to decorate the text 
+Can be overline, line – through, underline, none 
+Text – transform property 
+Used to spacify uppercase and lowercase letters in a text.
+p. uppercase {
+          text – transform: uppercase;
+line – height property 
+Used to spacify the space between lines.
+. small {
+    Line – height : 0.7;
+          }
+Font 
+Font plays a very important role in the look and feel of a website
+Font – family 
+Font family specify the font of a text.
+Can hold multiple values as a “ fallback ” system
+  p.   {
+    font – family : “ Times new Roman”, monospace;
+Note :  Always do this to ensure the correct font of your choice is rendered
+ Web safe fonts
+These fonts are universally installed across browers.
+How to add Google fonts
+In order to use custom Google fonts, go to Google fonts then select a style and finally paste it to the style.css off your page.
+  Other font property 
+ Some of the other font property is listed below:
+ Font – size > sets the size of the font
+Font – style >sets the font style
+Font – variant >sets whether text is displayed in small-caps
+Font – weight >sets the weight of the font
+Generic families
+Broad class of similar fonts eg.serif, sans-scrif just like when we say fruit, it can be any fruit. When we say serif it can be any serif font.
+Font-family >specific
+Generic –family >Generic
+
+
+
+
+Chapter 5 – size, position & list
+
+
+There are more unit for describing size other than ‘px’
+There are rem, cm, vw, percentage etc.
+What wrong with pixcls?
+Pixcls {px} are relative to the viewing device for a device with size 1920, 1px is 1 unit out of 1080/1920.
+Relative lengths
+There units are relative to the other length property following are some of the most commonly used relative lengths
+1. em >  unit relative to the parent font size ( em mean “ my parent element’s font size ” )
+2. rem > unit relative to the root font size ( <html/> tag)
+3. vw > unit relative to 1% viewport width.
+4. vh > unit relative to 1% viewport height.
+5. % > unit relative to the parent element.
+Min/max – height / width property
+CSS has a min – height , max – height , min – width and max width property.
+If the content is smaller than the minimum height, minimum height will be applied.
+Similar is the case with other related properties
+ The position property 
+Used to manipulate the location of an element following are the possible values:
+    • Static : The default position top/ bottom/ left/ right / z-index has no effect.
+    • Relative : The top/bottom/left/right/z-index will now work. Otherwise the element is in the flow of document like static.
+    • Absolute : The element is removed from the flow & is relatively positioned to its first non-static ancestor top/bottom etc works
+    • Fixed : Just like absolute expect the element is positioned relative to the browser window
+    • Sticky : The element is positioned based on user’s scroll position.
+ 
+List-style property 
+ The list style property is a shorthand for type, position & image
+  Ul {
+    list-style : square inside url ( kisan.png )
+     }
+   Z-index property 
+ The z-index property specifies the stack order of an element.
+It defines which layer will be above which in case of overlapping elements
+*Z – is the third dimension 
+
+
+
+
+
+
+
+
+Chapter 6 – Flexbox
+
+Before we look into the css flexbox, we will look into float and clear properties.
+The float property 
+Float property is simple. It just flows the element toward left/right
+
+
+
+The clear property 
+Used to clear the float. It specifies what element can float beside a given element.
+
+The CSS Flexbox
+Aims at provide a better way to layout, align and distribute space among item in a container.
+.container {
+     Display : flex;
+                  }
+
+
+
+ Flex-direction property
+ 
+Defines the direction toward which items are laid can be row, row-reverse, column, column-reverse.
+
+Flex property for parent ( flex container )
+
+Following are the properties for the flex parent :
+1. flex-wrap : Can be wrap, nowrap, wrap-reverse. Wrap items as needed with this property.
+2. Justify-content : Defines alignment along main axis.
+3. Align-items : Defines alignment along across axis.
+4. Align-content : Aligns a flex container’s lines when there is extra space in the cross axis.
+
+
+Flex properties for the children ( flex items )
+Following are the properties for the flex children.
+
+1. Order : Control the order in which the items appear in the flex container
+2. Align-self : Allows default alignment to be overridden for the individual flex items.
+3. flex-grow : Defines the ability for a flex item to grow
+4. flex-shrink : Specifies how much a flex item will shrink relative to the rest of the flex items.
+
+
+Chapter 7 – CSS Grid & Media Queries
+
+A css grid can be initialized using :
+.container {
+       Display : grid
+                   }
+All direct children automatically becomes grid items
+ 
+The grid-column-gap property 
+Using to adjust the space between the column of a css grid.
+
+The grid-row-gap property 
+Used to adjust the space between the rows of a css grid.
+The grid-gap property 
+Shorthand property for grid-row-gap & grid-column-gap 
+.container {
+             Display : grid;
+   *Note: For a single value of grid-gap , both row and column gaps can be set in one value.
+
+Following are the properties for grid container:
+1. The grid-template-column property can be used to specify the width of column
+.container {
+               Display : grid;
+              Grid-template-column : 10px 20px auto;	
+                  }
+2. The grid-template-row can be used to specify the height of each row
+   .container {
+             Display : grid;
+             Grid-template-row : 70px 150px;  }
+3. The justify-content is used to align the whole grid inside the container.
+4. The align-content property is used to vertically align the whole grid inside the container.
+Following are the property for grid item:
+1. The grid-column property defines how many columns an item will span.
+                       .grid-item {
+                             Grid-column : 1/5;
+                                          }
+2. The grid-row property defines how many rows an item will span.
+3. We can make an item to start on column 1 and span 3 column like this:
+     .item {
+             Grid-column: 1/span3;
+CSS  Media Queries
+Used to apply css only when a certain condition is true.
+Syntax:
+@media {
+        Background : red;
+                     }
+
+
+
+
+
+
+
+
+Chapter 8 – Transforms, Transitions & Animations
+Transforms are used to rotate, move, skew or scale element. They are used to create a 3d effect 
+
+The transform property 
+Used t apply a 2d or 3d transformation to an element 
+ The transform-origin property 
+Allows to change the position of transformed elements 
+2D transforms > Can change x & y axis
+3D transforms > Can changes z axis as well
+
+CSS 2D transform methods
+You can use the following 2-D transforms in CSS:
+1. translate ()
+2. rotate()
+3. scale X()
+4. scaleY()
+5. skew()
+6. matrix()
+7. scale()
+
+CSS Transitions
+Used to change property values smoothly, over a given duration.
+
+The transition property 
+ The transition property is used to add transition in css
+Following are the property is used for css transition:
+1. transition-property > The property you want to transition.
+2. transition-duration > Time for which you want transition to apply
+3. transition-timing-function > How you want the property to transition
+4. transition-delay > Specifies the delay for the transition
+
+All these properties can be set using a single shorthand property 
+Transition : width 35 case-in 25;
+
+Transition multiple properties 
+ We can transition multiple properties as follows:
+Transition : opacity 1s case-out 1s;  transform 2s case-in;
+
+CSS Animations 
+Used to animate css property with more control.
+We can use @keyframes rule to change the animation from a given style to a new style.
+@keygframes kamalesh {
+    From { width: 29px;}
+   To { width: 31px;}
+
+Properties to add Animations
+Following are the properties used to set animation in css:
+1. animation-name > name of the animation
+2. animation-duration > How long does the animation run?
+3. animation-timing-function > Determines space curve of the animation 
+4. animation-delay > Delay for the start of an animation
+5. animation-iteration-count > Number of times an animation shad run
+6. animation-direction > Specifies the direction of the animation
+
+
+The animation shorthand
+All the animation shorthand properties from 1-6 can be applied like this:
+Animation: kama   14   linear    15    infinite    reverse;
+
+Using percentage value states with animation
+We can use % value to indicate what should happen when a certain percent of animation is completed
+@keyframes kama {
+             Width: 20px;
+       }
+50% {
+     Width : 80px;
+     }
+100% {
+    Width : 200px;
+    }
+       }
+
+
