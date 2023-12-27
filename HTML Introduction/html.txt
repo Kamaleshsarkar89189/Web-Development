@@ -91,7 +91,7 @@ hr tag
 
 
 Subscript & superscript 
-    We can add subscriot in HTML as follows:
+    We can add subscript in HTML as follows:
 
         CO<sub> 2 </sub> is Subscript
         ax<sup>2</sup> is superscript
@@ -100,7 +100,7 @@ pre tag
     HTML always ignore extra space newlines. In order to display a piece of text as is, we use pre tag 
 
         <pre>
-            This is v  written
+            This is written
              using pre          --->
              tag
             </pre>
@@ -136,7 +136,7 @@ We can add links to image like this
 
 The div tag
     div tag is used as a container for other elements div is a block level element.
-                        <<always takes full widht>>
+                        <<always takes full width>>
                     
 
 
@@ -189,7 +189,7 @@ th tag: Used to place of table data for displaying table headers
 
     We can use define as many table rows as we want.
 
-    To add a caption to the table, we use <caption> tag iside table.
+    To add a caption to the table, we use <caption> tag inside table.
 
 
 thead tag: used to wrap table head(caption & tr with th)
@@ -222,7 +222,7 @@ Embedding Videos
 
 Attributes for Video 
     We can use: 
-     Widht: To adjust widht of a video (Height automatically adjusts)
+     Width: To adjust widht of a video (Height automatically adjusts)
      
      We can use autoplay/loop to autoplay or loop the video.
 
