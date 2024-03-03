@@ -41,5 +41,15 @@ Object
             price : "120" //value
         }
 
-        
+
+Quick Quiz: Write a Javascript program to store name, phone number and marks of a student using objects.
+
+
 */
+console.log("This repl contains code for the Ultimate JavaScript course video no 2")
+var a = 67 // a contains 67
+console.log(a)
+a = "harry"
+console.log(a)
+// let 8harry = 7 // Not allowed this will throw an error
+// let var = 7
