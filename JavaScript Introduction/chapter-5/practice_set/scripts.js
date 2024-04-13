@@ -72,7 +72,12 @@ while (runAgain) {
 //Question 4
 //Write a program to change the url to youtube.com(Redirect) if user entred a number greater than 4
 
+let number = prompt("Enter your number")
+number = Number.parseInt(number)
 
+if(number > 4){
+    location.href = "https://youtube.com"
+}
 
 
 
@@ -84,5 +89,5 @@ while (runAgain) {
 //     document.body.style.background = color;
 // });
 
-let color = prompt("Enter the page background color");
-document.body.style.background = color;
+// let color = prompt("Enter the page background color");
+// document.body.style.background = color;
