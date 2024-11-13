@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export const UseState = () => {
     // let counter = 0; // In simple JavaScript we declear the value as 0 
-    const [counter, setCounter] = useState(0) // use of react hooks, 0 is initilez as first value, we can use another value. Here counter is the initial value and setCounter it the new value of the counter variable
+    const [counter, setCounter] = useState(0) // use of react hooks, 0 is initialize as first value, we can use another value. Here counter is the initial value and setCounter is the new value of the counter variable
 
     const increment = () => {
         // counter = counter + 1;  // the function to increment by one 
@@ -18,7 +18,7 @@ export const UseState = () => {
         setInputValue(newValue)
     }
     return (
-        <div>
+        <div>UseState
             <div>
                 <h1>
                     <center>

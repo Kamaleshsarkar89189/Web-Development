@@ -13,7 +13,7 @@ const UseRef = () => {
     inputRef.current.value = "" // Whenever you click the button clear the input  
   }
   return (
-    <div>
+    <div>UseRef
       <center>
       <h1>Kamalesh</h1>
       <input type='text' placeholder='Try...' ref={inputRef}/> {/* To access the input value we use ref={}*/ }
