@@ -1,6 +1,6 @@
 # Overview 
 How to connect backend and frontend<br>
-There are severale process to create any fullstack app, we will learn the basic this that heps you to connect backend and frontend.<br>
+There are severale process to create any fullstack app, we will learn the basic this helps you to connect backend and frontend.<br>
 
 # Step 1:
 Create backend folder and frontend folder.<br>
