@@ -70,7 +70,7 @@ Quick quiz: Write s sample program demonstrating do while loop
 
 
 Function in JavaScript 
-        A JavaScript function is a block of code sedigned to perform a particular task.
+        A JavaScript function is a block of code designed to perform a particular task.
 
         Syntax of a function looks something like this :
 
