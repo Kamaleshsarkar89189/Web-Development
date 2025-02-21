@@ -17,7 +17,7 @@ Computer is Dumb!
 How to excute JavaScript ?
     Javascript can be executed right inside one's brower, you can open the javascript console and start writing javascript there.
 
-    Another way to excute javascript is a runtime like Note.js which can be installed and used to run javascript code.
+    Another way to excute javascript is a runtime like Node.js which can be installed and used to run javascript code.
     
     Yet another way to execute javascript is by inserting it inside <script> tag of an HTML document.
      
